@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+        <title>jitas</title>
+        <div class="songname"><h3>冷たいギフト</h3></div>
+</head>
+<body bgcolor="3c3934">
+    <div class="kanji"><pre>
+目が覚めて じっと何もせず
+俺は 試されてる 今も
+こんな時にも 夜が明け
+何げなく 死んだつもりになる
+        
+過去が追いかけて来る
+綺麗な目 人形 何も見ず
+君は 諦めてる 既に 遠い昔に
+郵便で お化けだか幽霊だか
+        
+なんだか そんなような者から
+送られてきた しっぽ 尖った牙
+あとは銀色の角
+目が覚めて じっと何もせず
+        
+俺は 試されてる 今も
+こんな時にも 冷棟して
+お化けだか幽霊だか とにかく
+そんなような者から
+        
+送られてきた 俺のかわいい奴
+そばでじっとしている
+冷たいギフト
+冷たいギフト
+        
+冷たいギフト
+冷たいギフト
+    </pre></div>
+    <input type="checkbox" id="romaji" onclick="myFunction()"><div class="romajistitle">Romaji</div>
+    <div class="romajis"><pre id="lyric" style="display:none">
+Megasamete jitto nani mo sezu
+ore wa tamesa re teru ima mo
+kon'na tokini mo yoru ga ake
+nani-ge naku shinda tsumori ni naru
+        
+kako ga oikakete kuru
+kireina-me ningyo nani mo mizu
+kimi wa akirame teru sudeni toi mukashi ni
+yubin de obakeda ka yureida ka
+        
+nandaka son'na yona mono kara
+okura rete kita shippo togatta kiba
+ato wa gin'iro no tsuno
+megasamete jitto nani mo sezu
+        
+ore wa tamesa re teru ima mo
+kon'na tokini mo reidou shite
+obakeda ka yuureida ka tonikaku
+son'na yona mono kara
+        
+okura rete kita ore no kawai yatsu
+soba de jitto shite iru
+tsumetai gifuto
+tsumetai gifuto
+        
+tsumetai gifuto
+tsumetai gifuto</pre></div>
+<script>
+    function myFunction() {
+      var checkBox = document.getElementById("romaji");
+      var text = document.getElementById("lyric");
+      if (checkBox.checked == true){
+        text.style.display = "block";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+    <form action="/summary.html">
+        <div class="colorsummary"><input type="submit" value="概要" /></div>
+    </form>    
+    <style>
+        .kanji {
+            color: azure;
+        }
+        .romajis {
+            color: azure;
+            position: absolute;
+            top: 3em;
+            left: 20em;
+        }
+        .songname {
+            color: azure;
+        }
+        .romajistitle {
+            color: azure;
+            position: absolute;
+            top: 38.7em;
+            left: 2em;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+                        }
+    </style>
+    <form action="http://www.yurayurateikoku.com/">
+    <input type="submit" value="ゆらゆら帝国 Official Site" />
+</body>
+</html>
